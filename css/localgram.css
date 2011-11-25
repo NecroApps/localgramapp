@@ -1,0 +1,87 @@
+
+* { font-family: "HelveticaNeue-CondensedBold", sans-serif }
+
+body {
+    background-image: url('../images/blacklinen.png');
+}
+
+#menu,
+#photos,
+#viewer,
+.state {
+    background-image: url('../images/blacklinen.png');
+}
+
+#caption {
+	font-size: 1.5em;
+}
+
+#caption,
+#filter {
+    text-decoration: none;
+    text-shadow: none;
+    color: #fff;
+    margin: 18px 0px;
+	text-align: center;
+}
+
+
+#followLink {
+	display: none;
+}
+
+#venue {
+	display: none;
+}
+
+#selfportrait { 
+	width: 100% 
+}
+
+.instagram { 
+	padding-left: 1px 
+}
+
+.instagram-placeholder {
+    max-width: 612px;
+    display: inline;
+}
+
+.instagram-image { 
+	width: 106px 
+}
+
+.instagram-image-large { 
+	width: 100% 
+}
+
+.photos { padding: 0px }
+
+.inset-fix {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.ui-body-a {
+    background-image: url('../images/blacklinen.png');
+    background-color: #000;
+}
+
+.ui-bar-a	{
+	background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #5d5d5d),
+        color-stop(0.5, #202020),
+        color-stop(0.5, #0f0f0f),
+        color-stop(1, #000000)
+    );
+    background-image: -moz-linear-gradient(
+        center top,
+        #5d5d5d 0%,
+        #202020 50%,
+        #000000 50%,
+        #0f0f0f 100%
+    );
+}

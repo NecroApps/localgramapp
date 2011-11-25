@@ -1,0 +1,383 @@
+<html manifest="http://localgramapp.com/app.manifest">
+<head>
+
+<title>Localgram</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />  
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="images/touch-icon-iphone.png" />
+<link rel="apple-touch-startup-image" href="images/startup.png">
+<link rel="apple-touch-startup-image"  sizes="640x920" href="images/startup@2x.png">
+
+
+<link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+<link rel="stylesheet" href="css/localgram.css" />
+
+<script src="js/jquery.js"></script>
+
+<script>
+
+	if(navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)){
+		$(document).bind("mobileinit", function(){
+			$.mobile.touchOverflowEnabled = false;
+		});
+			$('#followlink').css('display', 'block');
+			$('#venue').css('display', 'none');
+			//alert("iOS detected");
+	}
+
+</script>
+
+<script src="js/jquery.mobile-1.0.min.js"></script>
+<script src="js/localgram.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- Start of page: #menu -->
+<div data-role="page" id="menu">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#photos" onclick="geoPhotos('Near Me','geoloc','geoloc')" data-icon="star" class="ui-btn-left" data-iconpos="left">Near Me</a>
+		<h1 class="brandingfont">Localgram</h1>
+		<a href="#about" data-icon="gear" class="ui-btn-right" data-transition="slidedown" data-iconpos="right" data-rel="dialog">About</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#connecticut">Connecticut</a></li>
+			<li><a href="#maine"">Maine</a></li>
+			<li><a href="#massachusetts"">Massachusetts</a></li>
+			<li><a href="#newhampshire"">New Hampshire</a></li>
+			<li><a href="#newjersey"">New Jersey</a></li>
+			<li><a href="#newyork"">New York</a></li>
+			<li><a href="#rhodeisland"">Rhode Island</a></li>
+			<li><a href="#vermont"">Vermont</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /menu page -->
+
+
+<!-- Start of page: #connecticut -->
+<div data-role="page" id="connecticut" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">Connecticut</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Bloomfield','41.844167','-72.741389')">Bloomfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Bridgeport','41.186548','-73.195177')">Bridgeport</a></li>
+			<li><a href="#photos" onclick="newPhotos('Danbury','41.394817','-73.454011')">Danbury</a></li>
+			<li><a href="#photos" onclick="newPhotos('East Hartford','41.782322','-72.612035')">East Hartford</a></li>
+			<li><a href="#photos" onclick="newPhotos('East Windsor','41.916136','-72.55788')">East Windsor</a></li>
+			<li><a href="#photos" onclick="newPhotos('Ellington','41.917283','-72.458236')">Ellington</a></li>
+			<li><a href="#photos" onclick="newPhotos('Enfield','41.975','-72.549444')">Enfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Farmington','41.727778','-72.840278')">Farmington</a></li>
+			<li><a href="#photos" onclick="newPhotos('Glastonbury','41.686179','-72.545078')">Glastonbury</a></li>
+			<li><a href="#photos" onclick="newPhotos('Groton','41.349746','-72.079072')">Groton</a></li>
+			<li><a href="#photos" onclick="newPhotos('Hartford','41.763711','-72.685093')">Hartford</a></li>
+			<li><a href="#photos" onclick="newPhotos('Manchester','41.77593','-72.521501')">Manchester</a></li>
+			<li><a href="#photos" onclick="newPhotos('Middletown','41.562321','-72.650649')">Middletown</a></li>
+			<li><a href="#photos" onclick="newPhotos('New Haven','41.308153','-72.928158')">New Haven</a></li>
+			<li><a href="#photos" onclick="newPhotos('Old Saybrook','41.296016','-72.38453')">Old Saybrook</a></li>
+			<li><a href="#photos" onclick="newPhotos('South Windsor','41.833254','-72.569087')">South Windsor</a></li>
+			<li><a href="#photos" onclick="newPhotos('Storrs','41.808431','-72.249523')">Storrs</a></li>
+			<li><a href="#photos" onclick="newPhotos('Tolland','41.883869','-72.363777')">Tolland</a></li>
+			<li><a href="#photos" onclick="newPhotos('West Hartford','41.762045','-72.74204')">West Hartford</a></li>
+			<li><a href="#photos" onclick="newPhotos('Westbrook','41.295974','-72.464156')">Westbrook</a></li>
+			<li><a href="#photos" onclick="newPhotos('Vernon','41.81868','-72.479037')">Vernon</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /connecticut page -->
+
+
+<!-- Start of page: #maine -->
+<div data-role="page" id="maine" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">Maine</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Augusta','44.310624','-69.77949')">Augusta</a></li>
+			<li><a href="#photos" onclick="newPhotos('Bar Harbor','44.387612','-68.203912')">Bar Harbor</a></li>
+			<li><a href="#photos" onclick="newPhotos('Camden','44.209793','-69.064784')">Camden</a></li>
+			<li><a href="#photos" onclick="newPhotos('Derry','44.278134','-69.031146')">Derry</a></li>
+			<li><a href="#photos" onclick="newPhotos('Kennebunkport','43.361753','-70.476718')">Kennebunkport</a></li>
+			<li><a href="#photos" onclick="newPhotos('Portland','43.661471','-70.255326')">Portland</a></li>
+			<li><a href="#photos" onclick="newPhotos('Rockport','44.184482','-69.076097')">Rockport</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /connecticut page -->
+
+
+
+<!-- Start of page: #massachusetts -->
+<div data-role="page" id="massachusetts" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">Massachusetts</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Agawam','42.069539','-72.614812')">Agawam</a></li>
+			<li><a href="#photos" onclick="newPhotos('Amherst','42.366667','-72.516667')">Amherst</a></li>
+			<li><a href="#photos" onclick="newPhotos('Arlington','42.415374','-71.156443')">Arlington</a></li>
+			<li><a href="#photos" onclick="newPhotos('Belchertown','42.277036','-72.400918')">Belchertown</a></li>
+			<li><a href="#photos" onclick="newPhotos('Belmont','42.39593','-71.178665')">Belmont</a></li>
+			<li><a href="#photos" onclick="newPhotos('Boston','42.358431','-71.059773')">Boston</a></li>
+			<li><a href="#photos" onclick="newPhotos('Brimfield','42.124149','-72.207771')">Brimfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Brockton','42.083434','-71.018379')">Brockton</a></li>
+			<li><a href="#photos" onclick="newPhotos('Cambridge','42.37264','-71.109653')">Cambridge</a></li>
+			<li><a href="#photos" onclick="newPhotos('Chicopee','42.148704','-72.607867')">Chicopee</a></li>
+			<li><a href="#photos" onclick="newPhotos('Conway','42.509722','-72.7')">Conway</a></li>
+			<li><a href="#photos" onclick="newPhotos('Dedham','42.241765','-71.166164')">Dedham</a></li>
+			<li><a href="#photos" onclick="newPhotos('Dennis','41.735387','-70.193909')">Dennis</a></li>
+			<li><a href="#photos" onclick="newPhotos('Easthampton','42.266757','-72.66898')">Easthampton</a></li>
+			<li><a href="#photos" onclick="newPhotos('Fitchburg','42.583423','-71.802295')">Fitchburg</a></li>
+			<li><a href="#photos" onclick="newPhotos('Florence','42.335556','-72.671667')">Florence</a></li>
+			<li><a href="#photos" onclick="newPhotos('Gardner','42.575088','-71.998133')">Gardner</a></li>
+			<li><a href="#photos" onclick="newPhotos('Granby','42.257087','-72.516886')">Granby</a></li>
+			<li><a href="#photos" onclick="newPhotos('Granville','42.066667','-72.861944')">Granville</a></li>
+			<li><a href="#photos" onclick="newPhotos('Great Barrington','42.195923','-73.362056')">Great Barrington</a></li>
+			<li><a href="#photos" onclick="newPhotos('Greenfield','42.587586','-72.599534')">Greenfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Hadley','42.341757','-72.588422')">Hadley</a></li>
+			<li><a href="#photos" onclick="newPhotos('Hatfield','42.370923','-72.598145')">Hatfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Holyoke','42.204259','-72.616201')">Holyoke</a></li>
+			<li><a href="#photos" onclick="newPhotos('Longmeadow','42.050095','-72.582866')">Longmeadow</a></li>
+			<li><a href="#photos" onclick="newPhotos('Lowell','42.633425','-71.316172')">Lowell</a></li>
+			<li><a href="#photos" onclick="newPhotos('Montague','42.535528','-72.535344')">Montague</a></li>
+			<li><a href="#photos" onclick="newPhotos('North Adams','42.700915','-73.108715')">North Adams</a></li>
+			<li><a href="#photos" onclick="newPhotos('Northfield','42.695917','-72.452865')">Northfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Nantucket','41.28347','-70.099451')">Nantucket</a></li>
+			<li><a href="#photos" onclick="newPhotos('Northampton','42.32509','-72.641201')">Northampton</a></li>
+			<li><a href="#photos" onclick="newPhotos('Palmer','42.158427','-72.328693')">Palmer</a></li>
+			<li><a href="#photos" onclick="newPhotos('Pittsfield','42.450085','-73.245382')">Pittsfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Provincetown','42.058436','-70.178637')">Provincetown</a></li>
+			<li><a href="#photos" onclick="newPhotos('Shelburne Falls','42.604251','-72.739259')">Shelburne Falls</a></li>
+			<li><a href="#photos" onclick="newPhotos('Springfield','42.101483','-72.589811')">Springfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Somerville','42.387597','-71.099497')">Somerville</a></li>
+			<li><a href="#photos" onclick="newPhotos('South Hadley','42.258333','-72.575')">South Hadley</a></li>
+			<li><a href="#photos" onclick="newPhotos('Southampton','42.229167','-72.730556')">Southampton</a></li>
+			<li><a href="#photos" onclick="newPhotos('Sturbridge','42.108428','-72.078687')">Sturbridge</a></li>
+			<li><a href="#photos" onclick="newPhotos('Ware','42.259815','-72.239802')">Ware</a></li>
+			<li><a href="#photos" onclick="newPhotos('West Springfield','42.107038','-72.620367')">West Springfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Warwick','42.681944','-72.339444')">Warwick</a></li>
+			<li><a href="#photos" onclick="newPhotos('Wendell','42.548056','-72.397222')">Wendell</a></li>
+			<li><a href="#photos" onclick="newPhotos('Westfield','42.125093','-72.749538')">Westfield</a></li>
+			<li><a href="#photos" onclick="newPhotos('Wilbraham','42.123705','-72.431473')">Wilbraham</a></li>
+			<li><a href="#photos" onclick="newPhotos('Williamsburg','42.392831','-72.730093')">Williamsburg</a></li>
+			<li><a href="#photos" onclick="newPhotos('Worcester','42.262593','-71.802293')">Worcester</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /massachusetts page -->
+
+
+<!-- Start of page: #newhampshire -->
+<div data-role="page" id="newhampshire" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">New Hampshire</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Concord','43.208137','-71.537572')">Concord</a></li>
+			<li><a href="#photos" onclick="newPhotos('Keene','42.933692','-72.278141')">Keene</a></li>
+			<li><a href="#photos" onclick="newPhotos('Manchester','42.99564','-71.454789')">Manchester</a></li>
+			<li><a href="#photos" onclick="newPhotos('Portsmouth','43.071755','-70.762553')">Portsmouth</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /new jersey page -->
+
+<!-- Start of page: #newjersey -->
+<div data-role="page" id="newjersey" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">New Jersey</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Asbury Park','40.220391','-74.012082')">Asbury Park</a></li>
+			<li><a href="#photos" onclick="newPhotos('Belmar','40.178447','-74.021804')">Belmar</a></li>
+			<li><a href="#photos" onclick="newPhotos('Camden','39.925946','-75.11962')">Camden</a></li>
+			<li><a href="#photos" onclick="newPhotos('Chatham','40.740934','-74.383762')">Chatham</a></li>
+			<li><a href="#photos" onclick="newPhotos('Cherry Hill','39.926813','-75.024631')">Cherry Hill</a></li>
+			<li><a href="#photos" onclick="newPhotos('Florham Park','40.787878','-74.388207')">Florham Park</a></li>
+			<li><a href="#photos" onclick="newPhotos('Journal Square','40.734209','-74.062324')">Journal Square</a></li>
+			<li><a href="#photos" onclick="newPhotos('Hoboken','40.743991','-74.032363')">Hoboken</a></li>
+			<li><a href="#photos" onclick="newPhotos('Madison','40.759823','-74.417097')">Madison</a></li>
+			<li><a href="#photos" onclick="newPhotos('Montclair','40.825933','-74.209034')">Montclair</a></li>
+			<li><a href="#photos" onclick="newPhotos('Newark','40.735657','-74.172367')">Newark</a></li>
+			<li><a href="#photos" onclick="newPhotos('Paterson','40.916765','-74.171811')">Paterson</a></li>
+			<li><a href="#photos" onclick="newPhotos('Perth Amboy','40.506772','-74.265423')">Perth Amboy</a></li>
+			<li><a href="#photos" onclick="newPhotos('Point Pleasant','40.083171','-74.068193')">Point Pleasant</a></li>
+			<li><a href="#photos" onclick="newPhotos('Seaside Heights','39.944285','-74.072914')">Seaside Heights</a></li>
+			<li><a href="#photos" onclick="newPhotos('Trenton','40.217053','-74.742938')">Trenton</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /new jersey page -->
+
+
+<!-- Start of page: #newyork -->
+<div data-role="page" id="newyork" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">New York</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Albany','42.652579','-73.756232')">Albany</a></li>
+			<li><a href="#photos" onclick="newPhotos('Binghamton','42.098687','-75.917974')">Binghamton</a></li>
+			<li><a href="#photos" onclick="newPhotos('Brooklyn','40.65','-73.95')">Brooklyn</a></li>
+			<li><a href="#photos" onclick="newPhotos('Buffalo','42.886447','-78.878369')">Buffalo</a></li>
+			<li><a href="#photos" onclick="newPhotos('Ithaca','42.443961','-76.501881')">Ithaca</a></li>
+			<li><a href="#photos" onclick="newPhotos('Lake Placid','44.279491','-73.979871')">Lake Placid</a></li>
+			<li><a href="#photos" onclick="newPhotos('Poughkeepsie','41.700371','-73.92097')">Poughkeepsie</a></li>
+			<li><a href="#photos" onclick="newPhotos('Rochester','43.16103','-77.610922')">Rochester</a></li>
+			<li><a href="#photos" onclick="newPhotos('Syracuse','43.048122','-76.147424')">Syracuse</a></li>
+			<li><a href="#photos" onclick="newPhotos('Watertown','43.974784','-75.910756')">Watertown</a></li>
+			<li><a href="#photos" onclick="newPhotos('White Plains','41.033986','-73.76291')">White Plains</a></li>
+			<li><a href="#photos" onclick="newPhotos('Williamsburg','40.706446','-73.953616')">Williamsburg</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /new york page -->
+
+
+<!-- Start of page: #rhodeisland -->
+<div data-role="page" id="rhodeisland" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">Rhode Island</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Misquamicut','41.322322','-71.816179')">Misquamicut</a></li>
+			<li><a href="#photos" onclick="newPhotos('Newport','41.490102','-71.312828')">Newport</a></li>
+			<li><a href="#photos" onclick="newPhotos('Providence','41.823989','-71.412834')">Providence</a></li>
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /rhodeisland page -->
+
+
+<!-- Start of page: #vermont -->
+<div data-role="page" id="vermont" class="state">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1 class="brandingfont">Vermont</h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a" class="mainmenu">	
+		<ul data-role="listview" data-inset="true" class="inset-fix">
+			<li><a href="#photos" onclick="newPhotos('Brattleboro','42.850915','-72.557868')">Brattleboro</a></li>
+			<li><a href="#photos" onclick="newPhotos('Burlington','44.475883','-73.212072')">Burlington</a></li>
+			<li><a href="#photos" onclick="newPhotos('Middlebury','44.015337','-73.16734')">Middlebury</a></li>
+			<li><a href="#photos" onclick="newPhotos('Montpelier','44.260059','-72.575387')">Montpelier</a></li>
+
+		</ul>
+	</div><!-- /content -->
+	
+</div><!-- /vermont page -->
+
+
+<!-- Start of page: #photos -->
+<div data-role="page" id="photos">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1><div id="titlebarLabel" class="brandingfont">Photos</div></h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" class="photos">	
+		<div class="instagram"></div>	
+	</div>
+
+</div><!-- /photos page -->
+
+
+<!-- Start of page: #viewer -->
+<div data-role="page" id="viewer">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back">Back</a>
+		<h1><div id="phototitlebarLabel" class="brandingfont">Photo Viewer</div></h1>
+		<a href="#menu" data-icon="home" class="ui-btn-right" data-iconpos="right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div id="bigPhoto"></div>	
+		<div id="caption"></div>
+		<div id="filter"></div>
+		<div id="followlink"></div>
+		<div id="venue"></div>
+		<div id="map"></div>
+		<div id="link"></div>
+	</div>
+
+</div><!-- /viewer page -->
+
+
+<div data-role="page" id="about">
+	
+		<div data-role="header" data-theme="d">
+			<h1 class="brandingfont">About</h1>
+		</div>
+
+		<div data-role="content" data-theme="d">
+			<h3>Localgram (build 0.9.1)</h3>
+			<p>Localgram uses the Instagram API to find and display interesting photos from geographic areas of interest.</p>
+			<p><strong>NOTE:</strong> This product uses the Instagram API but is not endorsed or certified by Instagram.</p>
+
+			<div data-role="collapsible">
+				<h3>Written by Jeff Hobbs</h3>
+				<a href="http://instagr.am/p/Uz705/"><img id="selfportrait" src="http://distilleryimage5.instagram.com/64114c6212be11e180c9123138016265_7.jpg"/></a>
+				<p><a data-role="button" href="instagram://user?username=jeffehobbs">Follow Jeff on Instagram<a></p>
+				<p><a data-role="button" target="_blank" href="https://twitter.com/#!/jeffehobbs/">Follow Jeff on Twitter<a></p>
+				<p><a data-role="button" target="_blank" href="mailto:jeff@localgramapp.com">Send feedback email<a></p>
+			</div>
+
+			<a href="index.html" data-role="button" data-rel="back" data-theme="a">OK</a>
+      
+		</div>
+
+</div><!-- /about page -->
+
+
+</body>
+
+</html>

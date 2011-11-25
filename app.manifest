@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# Offline cache 0.9.1
+
+# HTML files
+index.html
+
+# CSS files
+css/localgram.css
+css/jquery.mobile-1.0.min.css
+css/images/icons-36-white.png
+css/images/icons-36-black.png
+css/images/icons-18-white.png
+css/images/icons-18-black.png
+css/images/ajax-loader.png
+
+# JavaScript files
+js/localgram.js
+js/jquery.js
+js/jquery.mobile-1.0.min.js
+
+# Image files
+images/blacklinen.png
