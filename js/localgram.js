@@ -1,6 +1,6 @@
 
 
-var accessToken = "20131.e66e7cc.29f5142b2b2343dc9710f6dcb5499196";
+var accessToken = "$INSTAGRAM_ACCESS_KEY";
 var distance = "5000";
 
 function newPhotos(townName,lat,long){
