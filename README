@@ -2,6 +2,6 @@ Localgram
 by Jeff Hobbs
 ---
 
-ABOUT: Localgram is a geolocation-focused photo browser using the Instagram API.
+ABOUT: Localgram is a geolocation-focused photo browser using the Instagram API. See it in action at [http://localgramapp.com](localgramapp.com).
 
 NOTE: You'll need your own Instagram API access key in order to use this. It's located in localgram.js; replace $INSTAGRAM_ACCESS_KEY with your access key string.
